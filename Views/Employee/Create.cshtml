@@ -1,0 +1,42 @@
+﻿@model D1W3_AssignementCURD.Models.Employee
+
+<div class="container mt-4 w-75">
+    <h2 class="mb-4 text-center text-primary">Add Employee</h2>
+
+    <div class="card shadow-lg p-4">
+        <form asp-action="Create">
+            <div class="row">
+                <!-- Name Field -->
+                <div class="col-md-6 mb-3">
+                    <label class="form-label"><i class="bi bi-person-fill"></i> Name</label>
+                    <input asp-for="Name" class="form-control" placeholder="Enter employee name" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <!-- Position Field -->
+                <div class="col-md-6 mb-3">
+                    <label class="form-label"><i class="bi bi-briefcase-fill"></i> Position</label>
+                    <input asp-for="Position" class="form-control" placeholder="Enter position" />
+                    <span asp-validation-for="Position" class="text-danger"></span>
+                </div>
+            </div>
+
+            <!-- Salary Field -->
+            <div class="mb-3">
+                <label class="form-label"><i class="bi bi-cash-stack"></i> Salary</label>
+                <input asp-for="Salary" class="form-control" placeholder="Enter salary" />
+                <span asp-validation-for="Salary" class="text-danger"></span>
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex justify-content-between">
+                <a asp-action="Index" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left"></i> Back to List
+                </a>
+                <button type="submit" class="btn btn-success">
+                    <i class="bi bi-check-circle"></i> Create
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

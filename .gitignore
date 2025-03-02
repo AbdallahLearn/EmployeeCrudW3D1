@@ -1,0 +1,81 @@
+# Visual Studio specific
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build artifacts
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.ilk
+*.log
+*.o
+*.obj
+*.resources
+*.sbr
+*.tlb
+*.tlh
+*.tmp
+*.vspscc
+*.vssscc
+*.vsp
+*.vspx
+*.vshost.*
+
+# NuGet packages
+*.nupkg
+**/packages/*
+!**/packages/build/
+**/project.lock.json
+**/project.assets.json
+**/packages.lock.json
+
+# Entity Framework migrations
+Migrations/
+
+# ASP.NET Core environment
+appsettings.Development.json
+appsettings.Local.json
+
+# User-specific files
+*.rsuser
+*.suo
+*.sln.docstates
+*.psess
+*.sdf
+*.pdb
+
+# Logs and database files
+*.log
+logs/
+*.mdf
+*.ldf
+*.db
+*.sqlite
+
+# Publish artifacts
+wwwroot/
+node_modules/
+dist/
+
+# JetBrains Rider / Resharper
+.idea/
+*.sln.iml
+*.dotSettings.user
+**/*.ReSharper/
+**/_ReSharper.Caches/
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
